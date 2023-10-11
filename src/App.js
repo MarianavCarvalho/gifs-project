@@ -5,8 +5,10 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
- <Gifs />
-  <footer> 
+        <main>
+          <Gifs />
+        </main>
+   <footer> 
       This project was coded by Mariana Carvalho and is open sourced on <a href="https://github.com/MarianavCarvalho/gifs-project">GitHub</a>
     </footer>
       </div>
