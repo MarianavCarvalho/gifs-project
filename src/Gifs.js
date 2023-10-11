@@ -6,12 +6,13 @@ export default function Gifs(){
  let[word, setWord] = useState(null);
 
     function handleResponse(response){
-        console.log(response.data)
+        console.log(response.meta)
     }
 
+    // https://developers.giphy.com/explorer/
     function search(){
         let apiGifsKey = "4FcQMZlVD6y1yqugPhiadllXoAvePUgE"
-let apiUrl = `https://api.giphy.com/v1/gifs/search/tags?api_key=${apiGifsKey}&q=giphy&limit=25&offset=0`;
+let apiUrl = `https://api.giphy.com/v1/gifs/search/${word}?api_key=${apiGifsKey}&q=giphy&limit=25&offset=0`;
 axios.get(apiUrl).then(handleResponse);
     }
     
