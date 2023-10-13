@@ -6,7 +6,9 @@ export default function Results(props){
 return (
     <div className="Results">
       {props.results.data.map(function(gif, index){
-        return {gif.featured_gif.embed_url}
+        return <div key={index}>
+            {gif.featured_gif.embed_url}
+        </div>
       })}
     </div>
 )
