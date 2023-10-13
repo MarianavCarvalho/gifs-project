@@ -1,10 +1,14 @@
 import React from "react";
 
 export default function Results(props){
-    console.log(props.results)
+  
     if (props.results){
 return (
-    <div className="Results"> "Results"</div>
+    <div className="Results">
+      {props.results.data.map(function(gif, index){
+        return {gif.featured_gif.embed_url}
+      })}
+    </div>
 )
     } else {
         return null;
