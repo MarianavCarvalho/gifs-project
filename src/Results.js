@@ -1,14 +1,14 @@
 import React from "react";
-import Data from "./Data";
+import Images from "./Images";
 
 export default function Results(props){
      if (props.results){
 return (
     <div className="Results">
-      {props.results.data.map(function(data, index){
+      {props.results.map(function(images, index){
         return (
         <div key={index}>
-          <Data data={data} />
+          <Images images={images} />
         </div>)
       })}
     </div>

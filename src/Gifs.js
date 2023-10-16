@@ -8,7 +8,7 @@ export default function Gifs(){
  let [results, setResults] = useState(null);
 
     function handleResponse(response){
-        setResults(response.data)
+        setResults(response.data.data)
     }
 
     // https://developers.giphy.com/explorer/
