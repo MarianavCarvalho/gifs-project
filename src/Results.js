@@ -1,18 +1,25 @@
+
 import React from "react";
-import Images from "./Images";
+
 
 export default function Results(props){
+  console.log(props.results)
      if (props.results){
 return (
     <div className="Results">
-      {props.results.map(function(images, index){
+ <div class="row"> 
+      {props.results.map(function(result, index){
         return (
-        <div key={index}>
-          <Images images={images} />
-        </div>)
+    <div class="col-2" key={index}>
+          
+        <img src={result.images.fixed_height.url} alt=""/>
+        </div>
+       
+        )
       })}
     </div>
-);
+    </div>
+)
     } else {
         return null;
     }

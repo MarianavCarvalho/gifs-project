@@ -14,7 +14,7 @@ export default function Gifs(){
     // https://developers.giphy.com/explorer/
     function search(){
         let apiGifsKey = "4FcQMZlVD6y1yqugPhiadllXoAvePUgE"
-let apiUrl = `https://api.giphy.com/v1/channels/search?api_key=${apiGifsKey}&q=${word}&limit=25&offset=0`;
+let apiUrl = `https://api.giphy.com/v1/gifs/search?api_key=${apiGifsKey}&q=${word}&limit=25&offset=0`;
 axios.get(apiUrl).then(handleResponse);
     }
     
