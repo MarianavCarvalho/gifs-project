@@ -1,0 +1,31 @@
+.Gifs h1 {
+    font-size: 36px;
+     margin-bottom: 20px;
+    color: white;
+    font-family: 'Sedgwick Ave Display';
+
+}
+
+.Gifs section {
+    background: black;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px white;
+    margin: 20px 0;
+}
+
+.Gifs input {
+    width: 100%;
+    padding: 6px 4px;
+    border: 1px solid black;
+    border-radius: 6px;
+    color: black;
+   
+}
+
+.Gifs .hint {
+    color: grey;
+    font-size: 16px;
+    margin-top: 5px;
+    font-family: 'Sedgwick Ave Display';
+}
