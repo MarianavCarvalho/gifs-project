@@ -3,7 +3,7 @@ import "./Gifs.css";
 import Results from "./Results";
 import axios from "axios";
 
-export default function Gifs(){
+export default function Gifs(props){
  let[word, setWord] = useState(null);
  let [results, setResults] = useState(null);
 
@@ -32,7 +32,7 @@ return(
         <section>
             <h1>What GIF do you want to look up?</h1>
             <form onSubmit={handleSubmit}>
-    <input type="search" onChange={handleWordChange}/>
+    <input type="search" onChange={handleWordChange} defaultValue={props.defaultKeyword}/>
 </form>
             <div className="hint">
                 suggested words: sunset, snow, plant, yoga...
