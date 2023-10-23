@@ -29,3 +29,13 @@
     margin-top: 5px;
     font-family: 'Sedgwick Ave Display';
 }
+
+@media(max-width: 700px){
+    .Gifs h1{
+        font-size: 20px;
+    }
+
+    .Gifs .hint {
+    font-size: 12px;
+        }
+}

@@ -12,7 +12,7 @@ return (
         return (
     <div class="col-4" key={index}>
           
-        <img src={result.images.fixed_height.url} alt="" className="img-responsive"/>
+        <img src={result.images.fixed_height.url} alt="" />
         </div>
        
         )
